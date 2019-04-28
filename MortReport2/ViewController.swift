@@ -16,9 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     
     var characters = Characters()
-//    var filteredCharacters = [CharacterInfo]()
-//    var searchController = UISearchController()
-//    var resultsController = UITableViewController()
+
 
     
     
@@ -30,12 +28,11 @@ class ViewController: UIViewController {
         characters.getCharacters {
             self.characterTableView.reloadData()
         }
- 
-
-
+        
+    }
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return characters.characterArray.count
     }
