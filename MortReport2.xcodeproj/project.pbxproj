@@ -19,6 +19,7 @@
 		27BD9A6322762DCE00AD24FA /* LocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD9A6222762DCE00AD24FA /* LocationInfo.swift */; };
 		27BD9A6522762DE700AD24FA /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD9A6422762DE700AD24FA /* Locations.swift */; };
 		27BD9A672276330100AD24FA /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD9A662276330100AD24FA /* LocationDetailViewController.swift */; };
+		27BD9A6922763AA600AD24FA /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD9A6822763AA600AD24FA /* SplashScreenViewController.swift */; };
 		6C741BF01CE5D1BDA7BCA702 /* Pods_MortReport2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2956424AB9D1CAACA29F8F2 /* Pods_MortReport2.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		27BD9A6222762DCE00AD24FA /* LocationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfo.swift; sourceTree = "<group>"; };
 		27BD9A6422762DE700AD24FA /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 		27BD9A662276330100AD24FA /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
+		27BD9A6822763AA600AD24FA /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		289AA39B18D2BBF0123DC5C6 /* Pods-MortReport2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MortReport2.release.xcconfig"; path = "Target Support Files/Pods-MortReport2/Pods-MortReport2.release.xcconfig"; sourceTree = "<group>"; };
 		D2956424AB9D1CAACA29F8F2 /* Pods_MortReport2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MortReport2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,6 +85,7 @@
 				27BD9A6422762DE700AD24FA /* Locations.swift */,
 				27BD9A662276330100AD24FA /* LocationDetailViewController.swift */,
 				27BD9A6022762DA800AD24FA /* LocationViewController.swift */,
+				27BD9A6822763AA600AD24FA /* SplashScreenViewController.swift */,
 				27436EB7227612D1001B9A25 /* ViewController.swift */,
 				27436EB9227612D1001B9A25 /* Main.storyboard */,
 				27436EBC227612D2001B9A25 /* Assets.xcassets */,
@@ -239,6 +242,7 @@
 				27436EB6227612D1001B9A25 /* AppDelegate.swift in Sources */,
 				27BD9A5D2276138C00AD24FA /* Characters.swift in Sources */,
 				27BD9A6522762DE700AD24FA /* Locations.swift in Sources */,
+				27BD9A6922763AA600AD24FA /* SplashScreenViewController.swift in Sources */,
 				27BD9A6322762DCE00AD24FA /* LocationInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

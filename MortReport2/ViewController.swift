@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         characterTableView.dataSource = self
         characterTableView.delegate = self
         self.navigationItem.title = "Characters"
+        
         characters.getCharacters {
             self.characterTableView.reloadData()
         }

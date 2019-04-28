@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lKT-xp-08L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1RI-Jl-LUk">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,6 +22,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" red="0.3153443038" green="0.68468385929999998" blue="0.77648574110000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" textLabel="do3-Zn-An3" style="IBUITableViewCellStyleDefault" id="E94-it-qwl">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
@@ -80,6 +81,8 @@
                                 <rect key="frame" x="0.0" y="61" width="414" height="835"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="0.3153443038" green="0.68468385929999998" blue="0.77648574110000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexBackgroundColor" red="0.97427302599999999" green="0.97012740369999995" blue="0.3841524422" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell2" textLabel="QFQ-mz-4ba" style="IBUITableViewCellStyleDefault" id="DNh-ml-5cR">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
@@ -284,6 +287,45 @@
             </objects>
             <point key="canvasLocation" x="2114.4927536231885" y="-547.09821428571422"/>
         </scene>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="Pcn-cf-v2e">
+            <objects>
+                <viewController id="1RI-Jl-LUk" customClass="SplashScreenViewController" customModule="MortReport2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mw8-fd-Rdn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RickAndMortySplash" translatesAutoresizingMaskIntoConstraints="NO" id="M8i-Mt-ZjT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="U4w-ME-Gnn" appends="YES" id="JRj-Ql-fvW"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pKI-0m-bxR" firstAttribute="trailing" secondItem="M8i-Mt-ZjT" secondAttribute="trailing" id="44o-NA-zMS"/>
+                            <constraint firstItem="M8i-Mt-ZjT" firstAttribute="top" secondItem="pKI-0m-bxR" secondAttribute="top" id="7kf-30-LPX"/>
+                            <constraint firstItem="M8i-Mt-ZjT" firstAttribute="leading" secondItem="pKI-0m-bxR" secondAttribute="leading" id="ecV-7H-N6v"/>
+                            <constraint firstItem="pKI-0m-bxR" firstAttribute="bottom" secondItem="M8i-Mt-ZjT" secondAttribute="bottom" id="lCm-SB-Dx5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pKI-0m-bxR"/>
+                    </view>
+                    <connections>
+                        <outlet property="mortyImageView" destination="M8i-Mt-ZjT" id="fpo-BN-2w0"/>
+                        <segue destination="lKT-xp-08L" kind="show" identifier="ShowCharacterTableView" id="Wa6-xs-Ia5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ur0-Fr-YzG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="U4w-ME-Gnn">
+                    <connections>
+                        <action selector="imageTapped:" destination="1RI-Jl-LUk" id="ZbK-w1-nO2"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-767" y="-547"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="FaN-WH-lBG">
             <objects>
@@ -303,4 +345,7 @@
             <point key="canvasLocation" x="166.66666666666669" y="-547.09821428571422"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="RickAndMortySplash" width="612" height="792"/>
+    </resources>
 </document>
