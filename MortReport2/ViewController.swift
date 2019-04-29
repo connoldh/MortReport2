@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseUI
+import GoogleSignIn
 
 class ViewController: UIViewController {
+    
     
     
 
@@ -16,12 +20,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     
     var characters = Characters()
-
+    var searchController: UISearchController!
+    var filteredData = [CharacterInfo]()
+    var authUI: FUIAuth!
+    
 
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        var authUI = FUIAuth.defaultAuthUI()
+//        authUI?.delegate = self
         characterTableView.dataSource = self
         characterTableView.delegate = self
         self.navigationItem.title = "Characters"
@@ -30,10 +39,16 @@ class ViewController: UIViewController {
             self.characterTableView.reloadData()
         }
         
+        filteredData = characters.characterArray
+        
     }
+    
+
+    
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return characters.characterArray.count
     }
@@ -58,5 +73,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
    
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

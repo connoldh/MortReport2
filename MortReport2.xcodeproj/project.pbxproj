@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270F697D227750490083563E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 270F697C227750490083563E /* GoogleService-Info.plist */; };
 		27436EB6227612D1001B9A25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27436EB5227612D1001B9A25 /* AppDelegate.swift */; };
 		27436EB8227612D1001B9A25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27436EB7227612D1001B9A25 /* ViewController.swift */; };
 		27436EBB227612D1001B9A25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27436EB9227612D1001B9A25 /* Main.storyboard */; };
 		27436EBD227612D2001B9A25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27436EBC227612D2001B9A25 /* Assets.xcassets */; };
 		27436EC0227612D2001B9A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27436EBE227612D2001B9A25 /* LaunchScreen.storyboard */; };
+		2778AFC6227761DF00ADE064 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2778AFC5227761DF00ADE064 /* FavoritesViewController.swift */; };
+		2778AFC822776B6700ADE064 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2778AFC722776B6700ADE064 /* Favorites.swift */; };
+		2778AFCA22776CA200ADE064 /* FavoriteInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2778AFC922776CA200ADE064 /* FavoriteInfo.swift */; };
 		27BD9A5B2276136B00AD24FA /* CharacterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD9A5A2276136B00AD24FA /* CharacterInfo.swift */; };
 		27BD9A5D2276138C00AD24FA /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD9A5C2276138C00AD24FA /* Characters.swift */; };
 		27BD9A5F2276291F00AD24FA /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD9A5E2276291F00AD24FA /* CharacterDetailViewController.swift */; };
@@ -25,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		00F2C70A0242DFED38BDCED4 /* Pods-MortReport2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MortReport2.debug.xcconfig"; path = "Target Support Files/Pods-MortReport2/Pods-MortReport2.debug.xcconfig"; sourceTree = "<group>"; };
+		270F697C227750490083563E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		27436EB2227612D1001B9A25 /* MortReport2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MortReport2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27436EB5227612D1001B9A25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27436EB7227612D1001B9A25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +37,9 @@
 		27436EBC227612D2001B9A25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27436EBF227612D2001B9A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27436EC1227612D2001B9A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2778AFC5227761DF00ADE064 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		2778AFC722776B6700ADE064 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		2778AFC922776CA200ADE064 /* FavoriteInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInfo.swift; sourceTree = "<group>"; };
 		27BD9A5A2276136B00AD24FA /* CharacterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfo.swift; sourceTree = "<group>"; };
 		27BD9A5C2276138C00AD24FA /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
 		27BD9A5E2276291F00AD24FA /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
@@ -85,12 +93,16 @@
 				27BD9A6422762DE700AD24FA /* Locations.swift */,
 				27BD9A662276330100AD24FA /* LocationDetailViewController.swift */,
 				27BD9A6022762DA800AD24FA /* LocationViewController.swift */,
+				2778AFC722776B6700ADE064 /* Favorites.swift */,
+				2778AFC922776CA200ADE064 /* FavoriteInfo.swift */,
+				2778AFC5227761DF00ADE064 /* FavoritesViewController.swift */,
 				27BD9A6822763AA600AD24FA /* SplashScreenViewController.swift */,
 				27436EB7227612D1001B9A25 /* ViewController.swift */,
 				27436EB9227612D1001B9A25 /* Main.storyboard */,
 				27436EBC227612D2001B9A25 /* Assets.xcassets */,
 				27436EBE227612D2001B9A25 /* LaunchScreen.storyboard */,
 				27436EC1227612D2001B9A25 /* Info.plist */,
+				270F697C227750490083563E /* GoogleService-Info.plist */,
 			);
 			path = MortReport2;
 			sourceTree = "<group>";
@@ -124,6 +136,7 @@
 				27436EAF227612D1001B9A25 /* Frameworks */,
 				27436EB0227612D1001B9A25 /* Resources */,
 				06635B2F80987849EA091BE0 /* [CP] Embed Pods Frameworks */,
+				021F9FBBA6930B8CD0E115B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27436EC0227612D2001B9A25 /* LaunchScreen.storyboard in Resources */,
+				270F697D227750490083563E /* GoogleService-Info.plist in Resources */,
 				27436EBD227612D2001B9A25 /* Assets.xcassets in Resources */,
 				27436EBB227612D1001B9A25 /* Main.storyboard in Resources */,
 			);
@@ -181,6 +195,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		021F9FBBA6930B8CD0E115B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MortReport2/Pods-MortReport2-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MortReport2/Pods-MortReport2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		06635B2F80987849EA091BE0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -191,14 +231,34 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MortReport2/Pods-MortReport2-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -238,10 +298,13 @@
 				27436EB8227612D1001B9A25 /* ViewController.swift in Sources */,
 				27BD9A5B2276136B00AD24FA /* CharacterInfo.swift in Sources */,
 				27BD9A6122762DA800AD24FA /* LocationViewController.swift in Sources */,
+				2778AFCA22776CA200ADE064 /* FavoriteInfo.swift in Sources */,
 				27BD9A672276330100AD24FA /* LocationDetailViewController.swift in Sources */,
 				27436EB6227612D1001B9A25 /* AppDelegate.swift in Sources */,
+				2778AFC6227761DF00ADE064 /* FavoritesViewController.swift in Sources */,
 				27BD9A5D2276138C00AD24FA /* Characters.swift in Sources */,
 				27BD9A6522762DE700AD24FA /* Locations.swift in Sources */,
+				2778AFC822776B6700ADE064 /* Favorites.swift in Sources */,
 				27BD9A6922763AA600AD24FA /* SplashScreenViewController.swift in Sources */,
 				27BD9A6322762DCE00AD24FA /* LocationInfo.swift in Sources */,
 			);

@@ -30,4 +30,16 @@ class LocationDetailViewController: UIViewController {
         locationTypeLabel.text = locationInfo.type
         locationDimensionLabel.text = locationInfo.dimension
     }
+    
+    func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertController.addAction(alertAction)
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    @IBAction func favoriteButtonPressed(_ sender: UIButton) {
+        showAlert(title: "Favorited", message: "This Location Has Been Added To Favorites.")
+    }
+    
 }

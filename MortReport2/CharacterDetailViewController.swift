@@ -21,6 +21,8 @@ class CharacterDetailViewController: UIViewController {
     @IBOutlet weak var statusStaticLabel: UILabel!
     
     var characterInfo = CharacterInfo()
+    var favoriteInfo1 = CharacterInfo()
+    
     
     
     
@@ -60,6 +62,21 @@ class CharacterDetailViewController: UIViewController {
         
     }
     
+    func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertController.addAction(alertAction)
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    
+    
+    @IBAction func favoriteButtonPressed(_ sender: UIButton) {
+        favoriteInfo1.name = characterInfo.name
+        favoriteInfo1.origin = characterInfo.origin
+        showAlert(title: "Favorited", message: "This Character Has Been Added To Favorites.")
+        
+    }
     
 
 
