@@ -14,8 +14,9 @@ class LocationDetailViewController: UIViewController {
     @IBOutlet weak var locationNameLabel: UILabel!
     @IBOutlet weak var locationTypeLabel: UILabel!
     @IBOutlet weak var locationDimensionLabel: UILabel!
-    
+    var defaultsData = UserDefaults.standard
     var locationInfo = LocationInfo()
+    var favorites = [String]()
     
     
     
@@ -31,11 +32,25 @@ class LocationDetailViewController: UIViewController {
         locationDimensionLabel.text = locationInfo.dimension
     }
     
+   
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowFavs" {
+            let destination = segue.destination as! FavoritesViewController
+            destination.favorites.append(locationInfo.name)
+            favorites = defaultsData.stringArray(forKey: "favorites") ?? [String]()
+            favorites.append(locationInfo.name)
+            defaultsData.set(favorites, forKey: "favorites")
+        }
+        
+        
+    }
+    
     func showAlert(title: String, message: String) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        /*let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
         alertController.addAction(alertAction)
-        present(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)*/
     }
     
     @IBAction func favoriteButtonPressed(_ sender: UIButton) {

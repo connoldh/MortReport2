@@ -7,9 +7,7 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseUI
-import GoogleSignIn
+
 
 class ViewController: UIViewController {
     
@@ -22,7 +20,7 @@ class ViewController: UIViewController {
     var characters = Characters()
     var searchController: UISearchController!
     var filteredData = [CharacterInfo]()
-    var authUI: FUIAuth!
+    
     
 
     

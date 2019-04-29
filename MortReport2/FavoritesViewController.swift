@@ -12,8 +12,9 @@ class FavoritesViewController: UIViewController {
 
     @IBOutlet weak var favoritesTableView: UITableView!
     
+    var favorites = [String]()
     var favoriteTest = Favorites()
-    
+    var defaultsData = UserDefaults.standard
     
     
     
@@ -22,24 +23,33 @@ class FavoritesViewController: UIViewController {
         super.viewDidLoad()
         favoritesTableView.delegate = self
         favoritesTableView.dataSource = self
+        
+        favorites = defaultsData.stringArray(forKey: "favorites") ?? [String]()
         self.navigationItem.title = "Favorites"
         
 
     }
     
-
+    func saveFavorites() {
+        /*let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(favorites){
+            UserDefaults.standard.set(encoded, forKey: "favorites")
+        } else {
+            print("ERROR: Saving encoded did not work")
+        }*/
+    }
     
 
 }
 
 extension FavoritesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return favoriteTest.favoritedArray.count
+        return favorites.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = favoritesTableView.dequeueReusableCell(withIdentifier: "Cell3", for: indexPath)
-        cell.textLabel?.text = "\(indexPath.row+1). \(favoriteTest.favoritedArray[indexPath.row])"
+        cell.textLabel?.text = "\(indexPath.row+1). \(favorites[indexPath.row])"
         return cell
     }
     
